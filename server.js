@@ -321,4 +321,6 @@ app.post('/projects/:project_id/lists/:list_id/tasks', async (req, res) => {
     res.send()
 })
 
-app.listen(process.env.PORT, () => {})
+const port = process.env.port || 3000;
+
+app.listen(port);
